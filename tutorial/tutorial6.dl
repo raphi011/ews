@@ -1,0 +1,18 @@
+parent(william, john).
+parent(john, james).
+parent(james, bill).
+parent(sue, bill).
+parent(james, carol).
+parent(sue, carol).
+
+male(john).
+male(james).
+female(sue).
+male(bill).
+female(carol).
+
+grandparent(X, Y) :- parent(X, Z), parent(Z, Y).
+father(X, Y) :- parent(X, Y), male(X).
+mother(X, Y) :- parent(X, Y), female(X).
+brother(X, Y) :- parent(P, X), parent(P, Y), male(X), X != Y.
+sister(X, Y) :- parent(P, X), parent(P, Y), female(X), X != Y.

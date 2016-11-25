@@ -1,0 +1,10 @@
+day(1).
+room(1).
+
+day(X) :- nextday(Y, X), day(Y).
+room(X) :- nextroom(Y, X), room(Y). 
+
+% X: Room
+% Y: Day
+scheduled(X, Y) v -scheduled(X, Y) :- day(Y), room(X), course(_, Y, X).
+

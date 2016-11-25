@@ -1,0 +1,3 @@
+parent(john, james).
+parent(james, bill).
+grandparent(john, bill) :- parent(john, james), parent(james, bill).

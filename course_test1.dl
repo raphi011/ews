@@ -1,0 +1,4 @@
+nextday(1,2). nextroom(1,2).
+course(c1,1,1). course(c1,1,2). course(c2,2,1).
+sumdays(1,2). sumdays(2,1). sumrooms(1,2). sumrooms(2,1).
+

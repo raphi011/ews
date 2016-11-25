@@ -1,0 +1,9 @@
+nextday(1,2). nextday(2,3). nextday(3,4).
+
+nextroom(1,2). nextroom(2,3). nextroom(3,4). nextroom(4,5).
+
+course(c1,1,1).                 course(c2,3,1).
+course(c3,1,2). course(c3,2,2). course(c3,3,2).
+course(c3,1,3).                 course(c3,3,3). course(c4,4,3).
+course(c3,1,4). course(c5,2,4). course(c5,3,4). course(c3,4,4).
+course(c3,1,5). course(c3,2,5). course(c3,3,5). course(c3,4,5).
