@@ -4,7 +4,7 @@ room(1).
 day(X) :- nextday(Y, X), day(Y).
 room(X) :- nextroom(Y, X), room(Y). 
 
-% X: Room
-% Y: Day
-scheduled(X, Y) v -scheduled(X, Y) :- day(Y), room(X), course(_, Y, X).
+scheduled(X, Y) v -scheduled(X, Y) :- day(X), room(Y), course(_, X, Y).
 
+% scheduled(X, Y) :- day(X), room(Y), course(_, X, Y), not -scheduled(X, Y).
+% -scheduled(X, Y) :- day(X), room(Y), course(_, X, y), not scheduled(X, Y).

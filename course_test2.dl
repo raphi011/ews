@@ -7,3 +7,7 @@ course(c3,1,2). course(c3,2,2). course(c3,3,2).
 course(c3,1,3).                 course(c3,3,3). course(c4,4,3).
 course(c3,1,4). course(c5,2,4). course(c5,3,4). course(c3,4,4).
 course(c3,1,5). course(c3,2,5). course(c3,3,5). course(c3,4,5).
+
+sumdays(1,1). sumdays(2,0). sumdays(3,2). sumdays(4,2). sumdays(5,4).
+sumrooms(1,2). sumrooms(2,2). sumrooms(3,3). sumrooms(4,2).
+    
