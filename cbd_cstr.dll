@@ -1,0 +1,6 @@
+:- expect_d4(M), not d4(M).
+:- expect_d5(M), not d5(M).
+:- d4(M), not expect_d4(M).
+:- d5(M), not expect_d5(M).
+:- d4(X), d4(Y), X < Y.
+:- d5(X), d5(Y), X < Y.
