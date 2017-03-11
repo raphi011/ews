@@ -1,0 +1,7 @@
+dept(1). dept(2). dept(3). dept(4).
+
+sel(X) v -sel(X) :- dept(X). 
+:- sel(X1), sel(X2), X1 != X2.	
+some_sel :- dept(X), sel(X).
+:- not some_sel.
+
