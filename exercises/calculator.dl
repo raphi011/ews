@@ -1,0 +1,7 @@
+calculator(c).
+in1(c,110). in2(c,50).
+
+out(C,V1) :- in1(C,V1), in2(C,V2), calculator(C), V1 > V2, V1 < 100.
+out(C,V2) :- not out(C, V1), in1(C,V1), in2(C,V2).
+
+

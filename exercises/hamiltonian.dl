@@ -1,0 +1,10 @@
+arc(1,2). arc(2,3). arc(1,3).
+node(1). node(2). node(3).
+start(1).
+
+inPath(X,Y) v outPath(X,Y) :- arc(X,Y).
+:- inPath(X,Y), inPath(X,Y1), Y != Y1.
+:- inPath(X,Y), inPath(X1,Y), X != X1.
+:- node(X), not reached(X).
+reached(X) :- start(X).
+reached(X) :- reached(Y), inPath(Y,X).
