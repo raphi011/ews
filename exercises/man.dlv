@@ -1,5 +1,5 @@
 man.
+
 single :- not husband.
 husband :- not single.
-
 
